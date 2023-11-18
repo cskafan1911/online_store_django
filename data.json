@@ -54,5 +54,83 @@
       "name": "Женская обувь",
       "description": null
     }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 1,
+    "fields": {
+      "name": "Футболка",
+      "description": "",
+      "image": "",
+      "category": 4,
+      "price": 2000,
+      "date_of_creation": "2023-11-18T09:46:18Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 2,
+    "fields": {
+      "name": "Горные лыжи",
+      "description": "",
+      "image": "",
+      "category": 6,
+      "price": 30000,
+      "date_of_creation": "2023-11-17T09:46:18Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 3,
+    "fields": {
+      "name": "Лыжи",
+      "description": "",
+      "image": "",
+      "category": 6,
+      "price": 20000,
+      "date_of_creation": "2022-11-17T09:46:18Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 11,
+    "fields": {
+      "name": "Сноуборд",
+      "description": "",
+      "image": "",
+      "category": 6,
+      "price": 40000,
+      "date_of_creation": "2023-11-16T09:46:18Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 12,
+    "fields": {
+      "name": "Лыжные палки",
+      "description": "",
+      "image": "",
+      "category": 6,
+      "price": 10000,
+      "date_of_creation": "2021-11-17T09:46:18Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 13,
+    "fields": {
+      "name": "Лыжные ботинки",
+      "description": "",
+      "image": "",
+      "category": 6,
+      "price": 15000,
+      "date_of_creation": "2021-11-10T09:46:18Z",
+      "date_of_last_change": null
+    }
   }
 ]
