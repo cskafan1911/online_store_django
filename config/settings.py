@@ -69,7 +69,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'onlinestore',
         'USER': 'postgres',
-        'PASSWORD': 't95qsnapQ'
+        'PASSWORD': os.getenv('DB_PASS'),
     }
 }
 
