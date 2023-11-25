@@ -36,11 +36,3 @@ def product_add(request):
         Products.objects.create(**new_product)
 
     return render(request, 'catalog/product_add.html')
-
-    # def contacts(request):
-    #     if request.method == 'POST':
-    #         name = request.POST.get('name')
-    #         phone = request.POST.get('phone')
-    #         message = request.POST.get('message')
-    #         print(f"{name} ({phone}) Оставил сообщение: {message}")
-    #     return render(request, 'catalog/contacts.html')
