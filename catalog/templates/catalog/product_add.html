@@ -1,0 +1,44 @@
+{% extends 'catalog/base.html' %}
+{% block content %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Название товара</span>
+        <input type="text" name="product_name" class="form-control" placeholder="Пример: Футболка серая"
+               aria-label="productname"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon03">Сохранить фото</button>
+        <input type="file" class="form-control" name="image"  id="formFile" aria-describedby="inputGroupFileAddon03"
+               aria-label="Upload">
+    </div>
+
+    <select class="form-select" aria-label="Default select example" name="category">
+        <option selected >Выберите категорию товара</option>
+        <option value="4">Одежда</option>
+        <option value="5">Обувь</option>
+        <option value="6">Инвентарь</option>
+    </select>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Описание товара</label>
+        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Цена</span>
+        <input type="text" name="price" class="form-check" aria-label="productname"
+               aria-describedby="basic-addon1">
+    </div>
+
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}
