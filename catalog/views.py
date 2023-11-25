@@ -32,7 +32,7 @@ def product_add(request):
             'price': request.POST.get('price'),
             'category': Category.objects.get(pk=request.POST.get('category'))
         }
-        print(new_product['image'])
+
         Products.objects.create(**new_product)
 
     return render(request, 'catalog/product_add.html')
