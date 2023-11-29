@@ -36,3 +36,21 @@ def product_add(request):
         Products.objects.create(**new_product)
 
     return render(request, 'catalog/product_add.html')
+
+
+def categories(request):
+    category_list = Category.objects.all()
+    context = {
+        'object_list': category_list,
+        'title': 'Категории товаров',
+    }
+
+    return render(request, 'catalog/categories.html', context)
+
+
+def category_products(request, pk):
+    context = {
+        'object_list': Products.objects.filter(category=pk),
+    }
+
+    return render(request, 'catalog/category_products.html', context)
