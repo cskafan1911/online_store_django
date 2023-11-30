@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic import ListView
 
 from catalog.models import Products, Category
 
@@ -42,20 +43,47 @@ def product_add(request):
     return render(request, 'catalog/product_add.html', context)
 
 
-def categories(request):
-    category_list = Category.objects.all()
-    context = {
-        'object_list': category_list,
+# def categories(request):
+#     category_list = Category.objects.all()
+#     context = {
+#         'object_list': category_list,
+#         'title': 'Категории товаров',
+#     }
+#
+#     return render(request, 'catalog/category_list.html', context)
+
+class CategoryListView(ListView):
+    model = Category
+    extra_context = {
         'title': 'Категории товаров',
     }
 
-    return render(request, 'catalog/categories.html', context)
-
 
 def category_products(request, pk):
+    category_item = Category.objects.get(pk=pk)
     context = {
         'object_list': Products.objects.filter(category=pk),
-        'title': 'Категория'
+        'category_pk': category_item.pk,
+        'title': f'Товары категории {category_item.name}'
     }
 
     return render(request, 'catalog/category_products.html', context)
+
+# class ProductsListView(ListView):
+#     model = Products
+#
+#
+#     def get_queryset(self):
+#         queryset = super().get_queryset()
+#         queryset = queryset.filter(category=self.kwargs.get('pk'))
+#
+#         return queryset
+#
+#     def get_context_data(self, *args, **kwargs):
+#         context_data = super().get_context_data(*args, **kwargs)
+#         context_data = {
+#             'object_list': Products.objects.filter(category=pk),
+#             'title': 'Категория'
+#         }
+#         return context_data
+
