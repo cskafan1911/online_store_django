@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.core.files.storage import FileSystemStorage
 
 from catalog.models import Products, Category
 
@@ -17,12 +16,17 @@ def index(request):
 def product_info(request, pk):
     context = {
         'object': Products.objects.get(pk=pk),
+        'title': 'Товары для спорта',
     }
 
     return render(request, 'catalog/product_info.html', context)
 
 
 def product_add(request):
+
+    context = {
+        'title': 'Введите данные о товаре'
+    }
 
     if request.method == 'POST':
         new_product = {
@@ -35,7 +39,7 @@ def product_add(request):
 
         Products.objects.create(**new_product)
 
-    return render(request, 'catalog/product_add.html')
+    return render(request, 'catalog/product_add.html', context)
 
 
 def categories(request):
@@ -51,6 +55,7 @@ def categories(request):
 def category_products(request, pk):
     context = {
         'object_list': Products.objects.filter(category=pk),
+        'title': 'Категория'
     }
 
     return render(request, 'catalog/category_products.html', context)
