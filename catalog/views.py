@@ -59,31 +59,31 @@ class CategoryListView(ListView):
     }
 
 
-def category_products(request, pk):
-    category_item = Category.objects.get(pk=pk)
-    context = {
-        'object_list': Products.objects.filter(category=pk),
-        'category_pk': category_item.pk,
-        'title': f'Товары категории {category_item.name}'
-    }
+# def category_products(request, pk):
+#     category_item = Category.objects.get(pk=pk)
+#     context = {
+#         'object_list': Products.objects.filter(category=pk),
+#         'category_pk': category_item.pk,
+#         'title': f'Товары категории {category_item.name}'
+#     }
+#
+#     return render(request, 'catalog/products_list.html', context)
 
-    return render(request, 'catalog/category_products.html', context)
+class ProductsListView(ListView):
+    model = Products
 
-# class ProductsListView(ListView):
-#     model = Products
-#
-#
-#     def get_queryset(self):
-#         queryset = super().get_queryset()
-#         queryset = queryset.filter(category=self.kwargs.get('pk'))
-#
-#         return queryset
-#
-#     def get_context_data(self, *args, **kwargs):
-#         context_data = super().get_context_data(*args, **kwargs)
-#         context_data = {
-#             'object_list': Products.objects.filter(category=pk),
-#             'title': 'Категория'
-#         }
-#         return context_data
+    def get_queryset(self):
+        queryset = super().get_queryset()
+        queryset = queryset.filter(category=self.kwargs.get('pk'))
+
+        return queryset
+
+    def get_context_data(self, *args, **kwargs):
+        context_data = super().get_context_data(*args, **kwargs)
+
+        category_item = Category.objects.get(pk=self.kwargs.get('pk'))
+        context_data['category_pk'] = category_item.pk
+        context_data['title'] = f'Товары категории {category_item.name}'
+
+        return context_data
 
