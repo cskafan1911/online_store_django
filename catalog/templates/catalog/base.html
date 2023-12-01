@@ -48,9 +48,9 @@
                 <div class="col-sm-4 offset-md-1 py-4">
                     <h4 class="text-white">Меню</h4>
                     <ul class="list-unstyled">
-                        <li><a href="{% url 'catalog:index' %}" class="text-white">Главная страница</a></li>
-                        <li><a href="{% url 'catalog:categories' %}" class="text-white">Категории товаров</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
+                        <li><a href="{% url 'catalog:index' %}" class="list-group-item">Главная страница</a></li>
+                        <li><a href="{% url 'catalog:categories' %}" class="list-group-item">Категории товаров</a></li>
+                        <li><a href="#" class="list-group-item">Email me</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +58,7 @@
     </div>
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a href="{% url 'catalog:product_create' %}" type="button" class="btn btn-sm btn-outline-secondary">Добавить
+            <a href="{% url 'catalog:product_create' %}" type="button" class="btn btn-lg btn-outline-secondary">Добавить
                 товар</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
                     aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
