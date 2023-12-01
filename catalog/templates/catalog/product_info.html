@@ -1,22 +1,22 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <div class="col">
-        <div class="card shadow-sm">
-            <img class="card card-img-top"
-                 src="{% mediapath object.image %}"
-                 alt="Card image cap">
-
-            <div class="card-body">
-                <h3 class="card-text">{{ object.category|title }}</h3>
-                <h5 class="card-text">{{ object.name|title }}</h5>
-                <p class="card-text">{{ object.description }}</p>
-                <p class="card-text">{{ object.price|title }} RUB</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
-                    </div>
+<div class="col-sm-4">
+    <div class="card shadow-sm">
+        <img class="card card-img-top"
+             src="{% mediapath object.image %}"
+             alt="Card image cap" width="100%" height="350">
+        <div class="card-body">
+            <h3 class="card-text">{{ object.category|title }}</h3>
+            <h5 class="card-text">{{ object.name|title }}</h5>
+            <p class="card-text">{{ object.description }}</p>
+            <p class="card-text">{{ object.price|title }} RUB</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-warning"
+                       href="{% url 'catalog:product_update' object.pk %}">Edit</a>
+                    <a class="btn btn-sm btn-outline-danger"
+                       href="{% url 'catalog:product_delete' object.pk %}">Delete</a>
                 </div>
             </div>
         </div>
