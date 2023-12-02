@@ -35,7 +35,6 @@ class BlogUpdateView(UpdateView):
         return reverse('blog:blog_info', args=[self.kwargs.get('pk')])
 
 
-
 class BlogDeleteView(DeleteView):
     model = Blog
     fields = ('title', 'content', 'preview', 'date_of_creation', 'is_published')
