@@ -18,6 +18,7 @@
                        href="{% url 'blog:blog_delete' object.pk %}">Delete</a>
                 </div>
             </div>
+            <div class="card-text">Количество просмотров: {{ object.view_count }}</>
         </div>
     </div>
 </div>
