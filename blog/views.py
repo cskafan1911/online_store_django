@@ -32,7 +32,7 @@ class BlogUpdateView(UpdateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('blog:blog_info', args=[self.kwargs.get('pk')])
+        return reverse('blog:blog_info', args=[self.kwargs.get('slug')])
 
 
 class BlogDeleteView(DeleteView):
@@ -63,4 +63,3 @@ class BlogDetailView(DetailView):
         self.object.save()
 
         return self.object
-
