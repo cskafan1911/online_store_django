@@ -1,0 +1,22 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-text">Удаление записи</h4>
+                    <h5 class="card-text m-3">Вы хотите удалить запись: {{ object.title }}?</h5>
+                    <button type="submit" class="btn btn-danger">
+                        Delete
+                    </button>
+                    <a class="btn btn-warning" href="{% url 'blog:blog_info' object.pk %}">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% endblock %}
