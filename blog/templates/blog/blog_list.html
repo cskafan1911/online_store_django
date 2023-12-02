@@ -1,26 +1,26 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
+<a href="{% url 'blog:blog_create' %}" type="button" class="btn btn-sm btn-outline-secondary mb-5">Добавить
+    запись</a>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <a href="{% url 'blog:blog_create' %}" type="button" class="btn btn-sm btn-outline-secondary my-auto mx-auto">Добавить
-                запись</a>
     {% for object in object_list %}
     <div class="col">
-    <div class="card shadow-sm">
-        <img class="card card-img-top"
-             src="{% mediapath object.image %}"
-             alt="Card image cap" width="100%" height="350">
-        <div class="card-body">
-            <p class="card-text">{{ object.name|title }}</p>
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                    <a href="{% url 'blog:blog_info' object.slug %}" type="button"
-                       class="btn btn-sm btn-outline-secondary">View</a>
+        <div class="card shadow-sm">
+            <img class="card card-img-top"
+                 src="{% mediapath object.preview %}"
+                 alt="Card image cap" width="100%" height="350">
+            <div class="card-body">
+                <p class="card-text">{{ object.title|title }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="{% url 'blog:blog_info' object.slug %}" type="button"
+                           class="btn btn-sm btn-outline-secondary">View</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
     {% endfor %}
 </div>
 {% endblock %}
