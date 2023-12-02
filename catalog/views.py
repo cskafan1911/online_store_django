@@ -1,5 +1,5 @@
 from django.urls import reverse_lazy, reverse
-from django.views.generic import ListView, CreateView, TemplateView, UpdateView, DeleteView
+from django.views.generic import ListView, CreateView, TemplateView, UpdateView, DeleteView, DetailView
 
 from catalog.models import Products, Category
 
@@ -63,26 +63,8 @@ class ProductsUpdateView(UpdateView):
         return reverse('catalog:index')
 
 
-class ProductInfoView(TemplateView):
-    template_name = 'catalog/product_info.html'
-    extra_context = {
-        'title': 'Товары для спорта'
-    }
-
-    def get_queryset(self):
-        queryset = super().get_queryset()
-        queryset = queryset.filter(id=self.kwargs.get('pk'))
-
-        return queryset
-
-    def get_context_data(self, *args, **kwargs):
-        context_data = super().get_context_data(*args, **kwargs)
-
-        product_item = Products.objects.get(pk=self.kwargs.get('pk'))
-        context_data['object'] = product_item
-        context_data['title'] = f'Товары категории {product_item.name}'
-
-        return context_data
+class ProductsDetailView(DetailView):
+    model = Products
 
 
 class ProductsDeleteView(DeleteView):
