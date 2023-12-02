@@ -10,6 +10,7 @@ class Blog(models.Model):
     content = models.TextField(verbose_name='Содержимое')
     preview = models.ImageField(upload_to='preview_image', **NULLABLE, verbose_name='Превью')
     date_of_creation = models.DateTimeField(**NULLABLE, verbose_name='Дата создания')
+    publication_status = models.BooleanField
 
 
     def __str__(self):
