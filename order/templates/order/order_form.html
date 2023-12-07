@@ -1,0 +1,19 @@
+{% extends 'catalog/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">Создание заявки на товар {{ product }}</div>
+    <div class="card-body">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="product_id" value="{{ product.pk }}">
+            {{ form.as_p }}
+            <button type="submit" class="btn-success">Оставить заявку</button>
+        </form>
+
+
+    </div>
+
+</div>
+
+{% endblock %}
