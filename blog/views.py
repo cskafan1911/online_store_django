@@ -1,13 +1,15 @@
+from django.core.mail import send_mail
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from pytils.translit import slugify
 
 from blog.models import Blog
+from config import settings
 
 
 class BlogCreateView(CreateView):
     model = Blog
-    fields = ('title', 'content', 'preview', 'date_of_creation', 'is_published')
+    fields = ('title', 'content', 'preview', 'is_published')
     success_url = reverse_lazy('blog:blogs')
 
     def form_valid(self, form):
@@ -61,5 +63,13 @@ class BlogDetailView(DetailView):
         self.object = super().get_object(queryset)
         self.object.view_count += 1
         self.object.save()
+
+        if self.object.view_count == 100:
+            send_mail(
+                subject='Сообщение о количестве просмотров',
+                message=f'У блога {self.object.title} количество просмотров достигло числа 100',
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=['dronov9@yandex.ru'],
+            )
 
         return self.object

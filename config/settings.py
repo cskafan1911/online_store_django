@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
-from dotenv import load_dotenv
 
-load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -126,8 +124,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_HOST = 'smtp_yandex.ru'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = os.getenv('YANDEX_MAIL')
-EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD')
+EMAIL_HOST_USER = 'dronov9@yandex.ru'
+EMAIL_HOST_PASSWORD = 'hseavhajtkypwzcs'
 EMAIL_USE_SSL = True
+EMAIL_USE_TLS = False
