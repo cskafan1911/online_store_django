@@ -56,6 +56,7 @@ class ProductsCreateView(CreateView):
 class ProductsUpdateView(UpdateView):
     model = Products
     form_class = ProductsForm
+    success_url = reverse_lazy('catalog:index')
     extra_context = {
         'title': 'Введите информацию о товаре',
     }
