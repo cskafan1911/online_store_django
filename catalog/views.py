@@ -15,8 +15,15 @@ class IndexView(TemplateView):
     }
 
     def get_context_data(self, **kwargs):
-        context_data = super().get_context_data(**kwargs)
+        context_data = super(IndexView, self).get_context_data(**kwargs)
         context_data['object_list'] = Products.objects.all()
+        for object in context_data['object_list']:
+            version_active = Version.objects.filter(product=object, version_status=True).last()
+            if version_active:
+                object.version_number = version_active.version_number
+                object.version_name = version_active.version_name
+            else:
+                object.version_number = None
 
         return context_data
 
