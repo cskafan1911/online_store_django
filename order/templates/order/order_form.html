@@ -2,7 +2,7 @@
 
 {% block content %}
 <div class="card">
-    <div class="card-header">Создание заявки на товар {{ product }}</div>
+    <div class="card-header">Создание заявки на товар {{ product.name }}</div>
     <div class="card-body">
         <form method="post">
             {% csrf_token %}
