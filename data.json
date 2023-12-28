@@ -1,0 +1,2563 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2023-11-17T17:26:47.709Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2023-11-17T17:27:03.184Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Обувь",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2023-11-17T17:27:32.676Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Инвентарь",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2023-11-17T17:33:00.882Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2023-11-17T17:33:00.906Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2023-11-17T17:33:00.908Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2023-11-18T09:43:54.563Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "Женская обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2023-11-18T09:43:54.573Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Мужская обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2023-11-18T09:43:54.575Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Женская одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2023-11-18T09:46:27.136Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Футболка Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2023-11-18T09:48:03.213Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Футболка Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2023-11-18T10:22:30.545Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Горные лыжи Инвентарь",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2023-11-19T13:20:18.023Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Dmitry +79999999999",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2023-11-21T18:56:45.196Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "женская обувь",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2023-11-21T18:56:52.225Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "инвентарь",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.449Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "Лыжные ботинки инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.454Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "Лыжные палки инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.455Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "Сноуборд инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.456Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Лыжи инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.457Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Горные лыжи инвентарь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2023-11-23T17:54:18.458Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Футболка Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2023-11-23T17:59:21.675Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Футболка Белая Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2023-11-23T18:00:50.917Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "Футболка Белая Одежда",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2023-11-23T18:01:20.037Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "Футболка Зеленая Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2023-11-23T18:02:43.015Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "Футболка Красная Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2023-11-23T19:43:07.598Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "Шорты белые Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2023-11-23T19:44:37.910Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "Шорты красные Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2023-11-23T19:45:49.057Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "Шорты зеленые Одежда",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2023-11-24T17:22:37.318Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "женская обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2023-11-24T17:22:37.321Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Мужская обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2023-11-24T17:22:37.321Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "Женская одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2023-11-24T17:22:37.322Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "Мужская одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2023-11-24T21:44:27.861Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2023-11-24T21:44:27.882Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "Футболка черная Обувь",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.689Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "31",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.712Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.714Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.716Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.718Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.720Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.721Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2023-11-24T21:56:07.722Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2023-11-24T22:05:19.465Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "36",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2023-11-24T22:05:19.489Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "35",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2023-11-24T22:05:19.491Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "34",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2023-11-24T22:05:19.493Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "33",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2023-11-24T22:05:19.495Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "32",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2023-11-24T22:05:51.601Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "37",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2023-11-24T22:06:47.784Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "38",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2023-11-24T22:07:49.784Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "39",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2023-11-24T22:08:37.627Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "41",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2023-11-24T22:08:37.640Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "40",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2023-11-24T22:09:22.414Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "42",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2023-11-24T22:11:14.133Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "44",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2023-11-24T22:11:14.140Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "43",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2023-11-24T22:12:58.637Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "46",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2023-11-24T22:12:58.645Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "45",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2023-11-24T22:14:42.800Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "47",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2023-11-24T22:17:54.346Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "48",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2023-11-24T22:23:35.389Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "49",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2023-11-24T22:27:25.735Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "51",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2023-11-24T22:27:25.738Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "50",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2023-11-24T22:29:15.100Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "53",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2023-11-24T22:29:15.105Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "52",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2023-11-24T22:46:06.127Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "55",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2023-11-24T22:46:06.135Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "54",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2023-11-24T22:50:32.425Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "56",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2023-11-25T07:37:33.093Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "62",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.443Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "65",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.446Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "64",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.447Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "63",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.448Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "62",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.450Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "61",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.451Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "60",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.452Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "59",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.452Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "58",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2023-11-25T09:08:37.453Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "57",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2023-11-25T09:14:14.243Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "67",
+      "object_repr": " Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2023-11-25T09:14:14.246Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "66",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2023-11-25T09:15:58.887Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "70",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2023-11-25T09:15:58.892Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "69",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2023-11-25T09:15:58.893Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "68",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2023-11-25T09:19:37.443Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "71",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2023-11-25T09:19:37.447Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "72",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2023-11-25T09:21:45.646Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "74",
+      "object_repr": "Футболка черная Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2023-11-25T09:21:45.651Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "73",
+      "object_repr": "Футболка белая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2023-11-29T19:45:16.812Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "75",
+      "object_repr": "Футболка серая Одежда",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2023-11-29T19:49:32.421Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "76",
+      "object_repr": "Горные лыжи инвентарь",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2023-11-29T19:50:21.053Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "77",
+      "object_repr": "Горные лыжи инвентарь",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2023-12-07T17:45:05.631Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2023-12-07T17:48:59.233Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2023-12-07T17:51:29.651Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2023-12-07T17:52:39.331Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2023-12-07T17:54:01.239Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2023-12-07T17:54:01.540Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2023-12-07T17:54:01.748Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2023-12-07T17:54:08.373Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2023-12-07T17:55:27.622Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2023-12-07T17:59:28.929Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2023-12-07T18:01:30.816Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2023-12-07T18:04:53.878Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2023-12-07T18:08:59.516Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2023-12-07T18:10:09.393Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2023-12-07T18:11:00.865Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2023-12-07T18:14:43.659Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2023-12-07T18:16:31.410Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2023-12-07T18:17:39.199Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2023-12-07T18:20:53.958Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2023-12-07T18:21:48.207Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2023-12-07T18:23:46.812Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Лыжный спорт",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2023-12-07T18:28:01.833Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "16",
+      "object_repr": "Футбол",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2023-12-09T07:38:37.610Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "16",
+      "object_repr": "Футбол",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043f\\u0440\\u043e\\u0441\\u043c\\u043e\\u0442\\u0440\\u043e\\u0432\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2023-12-20T17:36:01.573Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "1 - Стартовая версия: True",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2023-12-23T08:59:26.192Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "1 - Стартовая версия: True",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2023-12-23T09:24:11.946Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "1 - Стандартная версия: True",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2023-12-23T09:24:36.097Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "2 - Стартовая версия: False",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2023-12-26T16:54:03.887Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "5 - Первая версия: False",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0432\\u0435\\u0440\\u0441\\u0438\\u0438\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Наименование",
+      "content_type": 8,
+      "codename": "add_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Наименование",
+      "content_type": 8,
+      "codename": "change_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Наименование",
+      "content_type": 8,
+      "codename": "delete_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Наименование",
+      "content_type": 8,
+      "codename": "view_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Имя пользователя",
+      "content_type": 9,
+      "codename": "add_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Имя пользователя",
+      "content_type": 9,
+      "codename": "change_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Имя пользователя",
+      "content_type": 9,
+      "codename": "delete_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Имя пользователя",
+      "content_type": 9,
+      "codename": "view_contacts"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add product info",
+      "content_type": 10,
+      "codename": "add_productinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change product info",
+      "content_type": 10,
+      "codename": "change_productinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete product info",
+      "content_type": 10,
+      "codename": "delete_productinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view product info",
+      "content_type": 10,
+      "codename": "view_productinfo"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Блог",
+      "content_type": 11,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Блог",
+      "content_type": 11,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Блог",
+      "content_type": 11,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Блог",
+      "content_type": 11,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add Заказ",
+      "content_type": 12,
+      "codename": "add_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change Заказ",
+      "content_type": 12,
+      "codename": "change_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete Заказ",
+      "content_type": 12,
+      "codename": "delete_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view Заказ",
+      "content_type": 12,
+      "codename": "view_order"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add Версия",
+      "content_type": 13,
+      "codename": "add_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change Версия",
+      "content_type": 13,
+      "codename": "change_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete Версия",
+      "content_type": 13,
+      "codename": "delete_version"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view Версия",
+      "content_type": 13,
+      "codename": "view_version"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$FgXfNutSKESobkTJ9qXMmX$DSOQQBCtv3gNHGRMnN062A0ntaggQ3rVl9LDfa/y7LQ=",
+      "last_login": "2023-12-23T08:48:27.261Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-11-17T17:02:50.099Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "catalog",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "catalog",
+      "model": "products"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "catalog",
+      "model": "contacts"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "catalog",
+      "model": "productinfo"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "blog",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "order",
+      "model": "order"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "version",
+      "model": "version"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "3emswrpq6la3o8xjokzwotx3ql5yzuzr",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1rBIL6:2qFfN-fVx_7C8V53_epEjeDtEyKRlBulwiHqrbem9HA",
+      "expire_date": "2023-12-21T17:39:08.294Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "47j9wwr5hsf3cwn31ek9met4lvlb46bn",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1r42Fc:r6-IcErpN2Z87XXbM3ezuGz3CXUWdJILF9C0YEfCfMI",
+      "expire_date": "2023-12-01T17:03:28.620Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "axd817xe4yg88ts0art2e346abn77snd",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1r84ao:CxofCTM_dn7YP93u-Xykd2wlAFdro6z9jRdVFYF7ChE",
+      "expire_date": "2023-12-12T20:22:02.215Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "f1dqxxkk8hna49xd1gc496e286jsk2m4",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1rGxgJ:j1QYcjcAIcLxpKWBwQPuJWi3dB-IxtzKz7nsqZ1rcaI",
+      "expire_date": "2024-01-06T08:48:27.267Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "kbkdtgkqv62riuxmq2pp1dxvr9t0ztg6",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1r4hiA:OvrNmCDQDjvu2aQDQzbNw_CVsV7ZaL1iyMroKrtMy30",
+      "expire_date": "2023-12-03T13:19:42.226Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "r1s2mh6ys90m2ywbxipqj524pls328bg",
+    "fields": {
+      "session_data": ".eJxVjEsOwjAMBe-SNYocxaQuS_acIXJihxZQIvWzqrg7VOoCtm9m3mYir8sQ11mnOIq5GGdOv1vi_NS6A3lwvTebW12mMdldsQed7a2Jvq6H-3cw8Dx8ax-8QkJQnxULB9eJx-wSnx2qaFeouMKFkEi0h166npGZoAQCJDDvD_d3ODo:1r9MmE:XMIcEXuvY5NxizOao8YnX1pEdk6dzG70t8EFG0izoK0",
+      "expire_date": "2023-12-16T09:59:10.277Z"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+      "name": "Одежда",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 5,
+    "fields": {
+      "name": "Обувь",
+      "description": null
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 6,
+    "fields": {
+      "name": "инвентарь",
+      "description": ""
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 14,
+    "fields": {
+      "name": "Футболка Белая",
+      "description": "Это футболка из тонкого или плотного белого трикотажа, длиной до верхушки бедер, приталенная по боковому шву, с круглым или V-вырезом. Классическая футболка будет из хлопка, и будет сидеть по фигуре, но свободно, не обтягивая и не натягиваясь в интересных местах.",
+      "image": "product_image/white_tshort.jpg",
+      "category": 4,
+      "price": 3000,
+      "date_of_creation": "2023-11-23T17:59:16Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 15,
+    "fields": {
+      "name": "Футболка Зеленая",
+      "description": "Зеленая мужская футболка – это настоящая база в гардеробе. С зеленой футболкой получится создать комфортный деловой или casual образ.",
+      "image": "product_image/green_tshort.jpg",
+      "category": 4,
+      "price": 500,
+      "date_of_creation": "2023-11-23T18:01:19Z",
+      "date_of_last_change": "2023-12-23T22:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 16,
+    "fields": {
+      "name": "Футболка Красная",
+      "description": "Футболка классическая из высококачественного хлопка с добавлением эластана, что придает полотну пластичность, устойчивость.",
+      "image": "product_image/red_tshort.jpg",
+      "category": 4,
+      "price": 2500,
+      "date_of_creation": "2023-11-23T18:02:41Z",
+      "date_of_last_change": "2023-12-24T22:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 17,
+    "fields": {
+      "name": "Шорты белые",
+      "description": "Шорты белого цвета. Шорты унисекс. Выполнены из премиального качественного трикотажного полотна. Оснащены внутренними боковыми карманами.",
+      "image": "product_image/white_shorts.jpg",
+      "category": 4,
+      "price": 1500,
+      "date_of_creation": "2023-11-23T19:43:06Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 18,
+    "fields": {
+      "name": "Шорты красные",
+      "description": "Красные шорты - удобный вариант для спортивной одежды в летние дни. Модный спортивный дизайн. Удобная длина изделия.",
+      "image": "product_image/red_shorts.jpg",
+      "category": 4,
+      "price": 2000,
+      "date_of_creation": "2023-11-23T19:44:37Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 19,
+    "fields": {
+      "name": "Шорты зеленые",
+      "description": "Шорты зеленого цвета из эластичного хлопкового габардина, окрашенного в готовом виде. Накладные карманы по бокам и практичный эластичный пояс.",
+      "image": "product_image/green_shorts.jpg",
+      "category": 4,
+      "price": 999,
+      "date_of_creation": "2023-11-23T19:45:48Z",
+      "date_of_last_change": "2023-12-27T22:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 77,
+    "fields": {
+      "name": "Горные лыжи",
+      "description": "Профессиональные горные лыжи. Мировой бренд Head. Коричневого цвета.",
+      "image": "product_image/brown_ski.jpg",
+      "category": 6,
+      "price": 12000,
+      "date_of_creation": "2023-11-29T19:50:19Z",
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 85,
+    "fields": {
+      "name": "Горные лыжи",
+      "description": "Черные горные лыжи фирмы Head.",
+      "image": "product_image/black_ski_LnuwnUc.jpg",
+      "category": 6,
+      "price": 10000,
+      "date_of_creation": null,
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 86,
+    "fields": {
+      "name": "Футбольные бутсы",
+      "description": "Футбольные бутсы фирмы Adidas.",
+      "image": "product_image/football_boots_adidas.jpg",
+      "category": 5,
+      "price": 7000,
+      "date_of_creation": null,
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 87,
+    "fields": {
+      "name": "Футбольные бутсы",
+      "description": "Футбольные бутсы фирмы Nike",
+      "image": "product_image/football_boots_nike.jpg",
+      "category": 5,
+      "price": 3000,
+      "date_of_creation": "2023-12-02T00:00:00Z",
+      "date_of_last_change": "2023-12-23T22:00:00Z"
+    }
+  },
+  {
+    "model": "catalog.products",
+    "pk": 88,
+    "fields": {
+      "name": "Шиповки легкоатлетические",
+      "description": "Шиповки — беговая обувь с шипами на подошве. Шипы цепляются за покрытие и позволяют спортсмену развивать большую скорость. Подошва не проскальзывает, и силы бегуна не тратятся впустую.",
+      "image": "product_image/black_green_spikes.jpg",
+      "category": 5,
+      "price": 2900,
+      "date_of_creation": null,
+      "date_of_last_change": null
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 9,
+    "fields": {
+      "title": "Тестовая не опубликованная",
+      "slug": null,
+      "content": "__________________",
+      "preview": "",
+      "date_of_creation": "2023-12-02T00:00:00Z",
+      "view_count": 0,
+      "is_published": false
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 14,
+    "fields": {
+      "title": "Фирма Head",
+      "slug": "firma-head",
+      "content": "HEAD UK Ltd – ведущий мировой производитель снаряжения и одежды для спорта премиального уровня. Его структура организована по 5-и направлениям: Зимние виды спорта, Теннис, Дайвинг, Спортивная одежда, а также лицензированное производство.\r\nКомпания производит и продает снаряжение под брендами HEAD (горные лыжи, крепления, горнолыжные ботинки, сноуборды, защита, шлемы, очки, теннис, мячи для тенниса, ракетки для сквоша, обувь для тенниса, спортивная одежда и продукция для плавания), PENN (мячи для тенниса), TYROLIA (горнолыжные крепления) и MARES, SSI и rEvo (снаряжение для дайвинга).\r\nОсновная продукция компании HEAD занимает лидирующие позиции на рынке, благодаря продажам и репутации, а также добившись большой узнаваемости своих брендов. Горнолыжная штаб квартира HEAD находится в Австрии, откуда работает по всему миру. Основное производство находится в Австрии, Италии и Чехии.\r\nСо снаряжением HEAD выступают ведущие спортсмены мира. В горнолыжном спорте – это известнейшие атлеты Аксель Лунд Свиндаль, Тед Лигети, Кетиль Янсруд, Алексис Пинтуро, Андре Мирер, Линдси Вонн, Анна Файт и многие другие.",
+      "preview": "preview_image/blog_head.jpg",
+      "date_of_creation": "2023-12-02T00:00:00Z",
+      "view_count": 4,
+      "is_published": true
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 15,
+    "fields": {
+      "title": "Лыжный спорт",
+      "slug": "lyizhnyij-sport",
+      "content": "Разговоры о том, что содержащие фтор лыжные мази будут запрещены, шли давно, ведь на FIS и IBU давили экосообщества и руководство Европейского союза. Однако наказывать на практике до последнего не решались — не было инструментов для выявления фтора.",
+      "preview": "preview_image/blog_ski_RgNt3zt.jpg",
+      "date_of_creation": "2023-12-07T17:42:07.717Z",
+      "view_count": 101,
+      "is_published": true
+    }
+  },
+  {
+    "model": "blog.blog",
+    "pk": 16,
+    "fields": {
+      "title": "Футбол",
+      "slug": "futbol",
+      "content": "Товарищеский матч медийной команды 2DROTS с московским «Динамо», а также встречу сборной Медиалиги со сборной ФНЛ посмотрели больше людей, чем матчи Лиги чемпионов. Об этом сообщает журналист Иван Карпов в своём телеграм-канале про медиафутбол.",
+      "preview": "preview_image/blog_2drots.jpg",
+      "date_of_creation": "2023-12-07T18:27:44.068Z",
+      "view_count": 101,
+      "is_published": true
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 2,
+    "fields": {
+      "product": 14,
+      "name": "Dmitry",
+      "email": "dronov@icloud.com",
+      "message": "Куплю",
+      "closed": false,
+      "created_at": "2023-12-07T19:23:12.253Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 3,
+    "fields": {
+      "product": 87,
+      "name": "Dmitry",
+      "email": "dronov@icloud.com",
+      "message": "asdasd",
+      "closed": false,
+      "created_at": "2023-12-07T19:24:12.211Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 4,
+    "fields": {
+      "product": 86,
+      "name": "Dmitry",
+      "email": "dronov@icloud.com",
+      "message": "Ест желание купить, но хочу скидку)",
+      "closed": false,
+      "created_at": "2023-12-07T19:54:22.551Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 5,
+    "fields": {
+      "product": 77,
+      "name": "Дмитрий",
+      "email": "CSKA@mail.ru",
+      "message": "Куплю , оставьте контакты",
+      "closed": false,
+      "created_at": "2023-12-07T19:55:53.856Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 6,
+    "fields": {
+      "product": 88,
+      "name": "Dmitry",
+      "email": "CSKA@mail.ru",
+      "message": "Нужно 43 размер, есть в наличии?",
+      "closed": false,
+      "created_at": "2023-12-07T20:00:50.926Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 9,
+    "fields": {
+      "product": 14,
+      "name": "Dmitry",
+      "email": "dronov@icloud.com",
+      "message": "aegdf",
+      "closed": false,
+      "created_at": "2023-12-27T16:19:42.349Z"
+    }
+  },
+  {
+    "model": "order.order",
+    "pk": 10,
+    "fields": {
+      "product": 14,
+      "name": "asd",
+      "email": "dronov@icloud.com",
+      "message": "asd",
+      "closed": false,
+      "created_at": "2023-12-27T16:32:01.306Z"
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 1,
+    "fields": {
+      "product": 87,
+      "version_name": "Первая версия",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 2,
+    "fields": {
+      "product": 87,
+      "version_name": "Версия со скидкой",
+      "version_status": true
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 3,
+    "fields": {
+      "product": 85,
+      "version_name": "Первая версия",
+      "version_status": true
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 4,
+    "fields": {
+      "product": 85,
+      "version_name": "Вторая версия",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 5,
+    "fields": {
+      "product": 15,
+      "version_name": "Первая версия",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 6,
+    "fields": {
+      "product": 15,
+      "version_name": "Версия со скидкой",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 7,
+    "fields": {
+      "product": 16,
+      "version_name": "Первая версия",
+      "version_status": true
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 8,
+    "fields": {
+      "product": 19,
+      "version_name": "Первая версия",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 9,
+    "fields": {
+      "product": 19,
+      "version_name": "Версия со скидкой",
+      "version_status": false
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 10,
+    "fields": {
+      "product": 15,
+      "version_name": "Распродажа",
+      "version_status": true
+    }
+  },
+  {
+    "model": "version.version",
+    "pk": 11,
+    "fields": {
+      "product": 19,
+      "version_name": "Распродажа",
+      "version_status": true
+    }
+  }
+]
