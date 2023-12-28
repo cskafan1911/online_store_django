@@ -52,6 +52,7 @@
                         <li><a href="{% url 'catalog:categories' %}" class="list-group-item">Категории товаров</a></li>
                         <li><a href="{% url 'blog:blogs' %}" class="list-group-item">Блоги</a></li>
                         {% if user.is_authenticated%}
+                        <li><a href="{% url 'users:profile' %}" class="list-group-item">Профиль</a></li>
                         <li><a href="{% url 'users:logout' %}" class="list-group-item">Выйти</a></li>
                         {% else %}
                         <li><a href="{% url 'users:login' %}" class="list-group-item">Войти</a></li>
