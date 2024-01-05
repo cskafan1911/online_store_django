@@ -2,3 +2,7 @@
 
 Для подключения к базе данных PostgreSQL, необходимо создать переменную среды пользователя "DB_PASS" с паролем для
 пользователя 'postgres' от БД PostgresSQL.
+
+Для настройки отправки сообщений на почту необходимо создать переменные среды пользователя:
+* EMAIL_HOST_USER = os.getenv('YANDEX_MAIL') (YANDEX_MAIL - адрес почты с которой ведется рассылка)
+* EMAIL_HOST_PASSWORD = os.getenv('MAIL_PASSWORD') (MAIL_PASSWORD - пароль от почты)
