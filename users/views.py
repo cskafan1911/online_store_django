@@ -24,6 +24,7 @@ class RegisterView(CreateView):
 
     def form_valid(self, form):
         user = form.save(commit=False)
+        user.is_active = False
         user.save()
         token = default_token_generator.make_token(user)
         uid = urlsafe_base64_encode(force_bytes(user.pk))
@@ -50,6 +51,7 @@ class UserConfirmEmailView(View):
 
         if user is not None and default_token_generator.check_token(user, token):
             user.email_verify = True
+            user.is_active = True
             user.save()
             login(request, user)
             return redirect('users:email_confirmed')
