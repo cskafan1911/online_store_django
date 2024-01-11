@@ -5,14 +5,18 @@ from django.urls import reverse
 from django.views.generic import CreateView
 
 from catalog.models import Products
+from order.forms import OrderForm
 from order.models import Order
 
 
 class OrderCreateView(CreateView):
     model = Order
-    fields = ('product', 'name', 'email', 'message',)
+    form_class = OrderForm
+    extra_context = {
+        'title': 'Заявка на товар',
+    }
 
-    def get_success_url(self):
+    def get_success_url(self, *kwargs):
         return reverse('catalog:product_info', args=[self.kwargs.get('pk')])
 
     def get_context_data(self, **kwargs):
