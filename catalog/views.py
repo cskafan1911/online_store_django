@@ -16,7 +16,7 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context_data = super(IndexView, self).get_context_data(**kwargs)
-        context_data['object_list'] = Products.objects.all()
+        context_data['object_list'] = Products.objects.filter(is_published=True)
         for object in context_data['object_list']:
             version_active = Version.objects.filter(product=object, version_status=True).last()
             if version_active:
