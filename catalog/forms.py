@@ -14,6 +14,11 @@ class StyleFormMixin:
 class ProductsForm(StyleFormMixin, forms.ModelForm):
     forbidden_list = ['казино', 'криптовалюта', 'крипта', 'биржа', 'дешево', 'бесплатно', 'обман', 'полиция', 'радар']
 
+    def __init__(self, *args, **kwargs):
+
+        super().__init__(*args, **kwargs)
+        self.fields["is_published"].widget.attrs['class'] = 'form-check-input'
+
     class Meta:
         model = Products
         exclude = ('creator',)
