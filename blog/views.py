@@ -54,7 +54,10 @@ class BlogListView(ListView):
 
     def get_queryset(self, *args, **kwargs):
         queryset = super().get_queryset(*args, **kwargs)
-        queryset = queryset.filter(is_published=True)
+        if self.request.user.has_perm('blog.blog_custom_perm') or self.request.user.is_superuser:
+            return queryset
+        else:
+            queryset = queryset.filter(is_published=True)
 
         return queryset
 
