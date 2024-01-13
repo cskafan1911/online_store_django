@@ -20,8 +20,10 @@
                            class="btn btn-sm btn-outline-success">Buy</a>
                         <a class="btn btn-sm btn-outline-warning"
                            href="{% url 'catalog:product_update' object.pk %}">Edit</a>
+                        {% if perms.catalog.delete_products %}
                         <a class="btn btn-sm btn-outline-danger"
                            href="{% url 'catalog:product_delete' object.pk %}">Delete</a>
+                        {% endif %}
                     </div>
                 </div>
                 {% else %}

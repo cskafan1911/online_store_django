@@ -26,7 +26,7 @@ class Products(models.Model):
     date_of_creation = models.DateTimeField(**NULLABLE, verbose_name='Дата создания')
     date_of_last_change = models.DateTimeField(**NULLABLE, verbose_name='Дата последнего изменения')
 
-    is_published = models.BooleanField(default=True, verbose_name='Признак публикации')
+    is_published = models.BooleanField(default=False, verbose_name='Признак публикации')
 
     creator = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, **NULLABLE,
                                 verbose_name='Создатель')

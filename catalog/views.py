@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.forms import inlineformset_factory
 from django.http import Http404
 from django.urls import reverse_lazy, reverse
@@ -88,7 +88,9 @@ class ProductsUpdateView(LoginRequiredMixin, UpdateView):
 
     def get_object(self, queryset=None):
         self.object = super().get_object()
-        if self.object.creator != self.request.user:
+        if self.request.user.groups.filter(name='Moderator').exists():
+            return self.object
+        elif self.object.creator != self.request.user and not self.request.user.is_superuser:
             raise Http404('Вы не можете редактировать данный товар')
 
         return self.object
@@ -120,6 +122,7 @@ class ProductsDetailView(DetailView):
     model = Products
 
 
-class ProductsDeleteView(LoginRequiredMixin, DeleteView):
+class ProductsDeleteView(LoginRequiredMixin, PermissionRequiredMixin, DeleteView):
     model = Products
+    permission_required = 'catalog.delete_products'
     success_url = reverse_lazy('catalog:index')
