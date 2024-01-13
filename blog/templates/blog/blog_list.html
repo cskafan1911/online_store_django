@@ -1,7 +1,7 @@
 {% extends 'catalog/base.html' %}
 {% load my_tags %}
 {% block content %}
-{% if user.is_authenticated %}
+{% if perms.blog.blog_custom_perm %}
 <a href="{% url 'blog:blog_create' %}" type="button" class="btn btn-sm btn-outline-secondary mb-5">Добавить
     запись</a>
 {% else %}

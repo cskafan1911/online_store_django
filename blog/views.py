@@ -1,4 +1,4 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from django.core.mail import send_mail
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
@@ -8,8 +8,9 @@ from blog.models import Blog
 from config import settings
 
 
-class BlogCreateView(LoginRequiredMixin, CreateView):
+class BlogCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Blog
+    permission_required = 'blog.blog_custom_perm'
     fields = ('title', 'content', 'preview', 'is_published')
     success_url = reverse_lazy('blog:blogs')
 
@@ -22,8 +23,9 @@ class BlogCreateView(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
 
-class BlogUpdateView(LoginRequiredMixin, UpdateView):
+class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Blog
+    permission_required = 'blog.blog_custom_perm'
     fields = ('title', 'content', 'preview', 'is_published')
 
     def form_valid(self, form):

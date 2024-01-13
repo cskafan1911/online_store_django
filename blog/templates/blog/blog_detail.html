@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h3 class="card-text">Запись {{ object.title }} ({{ object.slug }})</h3>
                 <h6 class="card-text">{{ object.content }}</h6>
-                {% if user.is_authenticated %}
+                {% if perms.blog.blog_custom_perm %}
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                         <a class="btn btn-sm btn-outline-warning"
