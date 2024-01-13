@@ -3,7 +3,7 @@ from django.forms import inlineformset_factory
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, TemplateView, UpdateView, DeleteView, DetailView
 
-from catalog.forms import ProductsForm
+from catalog.forms import ProductsForm, ModeratorForm
 from catalog.models import Products, Category
 from version.forms import VersionForm
 from version.models import Version
@@ -78,6 +78,12 @@ class ProductsUpdateView(LoginRequiredMixin, UpdateView):
     extra_context = {
         'title': 'Введите информацию о товаре',
     }
+
+    def get_form_class(self):
+        if self.request.user.groups.filter(name='Moderator').exists():
+            return ModeratorForm
+
+        return ProductsForm
 
     def get_success_url(self):
         return reverse('catalog:index')

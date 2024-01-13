@@ -38,3 +38,10 @@ class ProductsForm(StyleFormMixin, forms.ModelForm):
             raise forms.ValidationError('Данный продукт находится в списке запрещенных')
 
         return cleaned_data
+
+
+class ModeratorForm(ProductsForm):
+
+    class Meta:
+        model = Products
+        fields = ('is_published', 'description', 'category',)
