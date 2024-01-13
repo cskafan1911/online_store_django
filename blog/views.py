@@ -4,14 +4,15 @@ from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DetailView, UpdateView, DeleteView
 from pytils.translit import slugify
 
+from blog.forms import BlogForm
 from blog.models import Blog
 from config import settings
 
 
 class BlogCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     model = Blog
+    form_class = BlogForm
     permission_required = 'blog.blog_custom_perm'
-    fields = ('title', 'content', 'preview', 'is_published')
     success_url = reverse_lazy('blog:blogs')
 
     def form_valid(self, form):
@@ -25,8 +26,8 @@ class BlogCreateView(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
 
 class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
     model = Blog
+    form_class = BlogForm
     permission_required = 'blog.blog_custom_perm'
-    fields = ('title', 'content', 'preview', 'is_published')
 
     def form_valid(self, form):
         if form.is_valid():
@@ -42,7 +43,6 @@ class BlogUpdateView(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
 
 class BlogDeleteView(LoginRequiredMixin, DeleteView):
     model = Blog
-    fields = ('title', 'content', 'preview', 'is_published')
     success_url = reverse_lazy('blog:blogs')
 
 
