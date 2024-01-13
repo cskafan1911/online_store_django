@@ -1,5 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.forms import inlineformset_factory
+from django.http import Http404
 from django.urls import reverse_lazy, reverse
 from django.views.generic import ListView, CreateView, TemplateView, UpdateView, DeleteView, DetailView
 
@@ -84,6 +85,13 @@ class ProductsUpdateView(LoginRequiredMixin, UpdateView):
             return ModeratorForm
 
         return ProductsForm
+
+    def get_object(self, queryset=None):
+        self.object = super().get_object()
+        if self.object.creator != self.request.user:
+            raise Http404('Вы не можете редактировать данный товар')
+
+        return self.object
 
     def get_success_url(self):
         return reverse('catalog:index')
