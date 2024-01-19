@@ -6,6 +6,7 @@ from django.views.generic import ListView, CreateView, TemplateView, UpdateView,
 
 from catalog.forms import ProductsForm, ModeratorForm
 from catalog.models import Products, Category
+from catalog.services import get_cache_objects_list
 from version.forms import VersionForm
 from version.models import Version
 
@@ -35,6 +36,13 @@ class CategoryListView(ListView):
     extra_context = {
         'title': 'Категории товаров',
     }
+
+    def get_context_data(self, **kwargs):
+
+        context_data = super().get_context_data(**kwargs)
+        context_data['object_list'] = get_cache_objects_list(Category)
+
+        return context_data
 
 
 class ProductsListView(ListView):
