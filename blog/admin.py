@@ -5,4 +5,8 @@ from blog.models import Blog
 
 @admin.register(Blog)
 class BlogAdmin(admin.ModelAdmin):
+    """
+    Класс для настройки панели администратора модели Blog.
+    """
+
     list_display = ('pk', 'title', 'date_of_creation')

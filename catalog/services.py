@@ -7,6 +7,10 @@ from version.models import Version
 
 
 def get_cache_objects_list(model_):
+    """
+    Функция кеширования списка категорий товара
+    :param model_: Модель кешируемого объекта
+    """
     key = 'objects_list'
     objects_list = cache.get(key)
     if settings.CACHE_ENABLED:
@@ -20,6 +24,9 @@ def get_cache_objects_list(model_):
 
 
 def get_product_active_version(context_data):
+    """
+    Функция для фильтрует и выводит на экран продукты с последней активной версией.
+    """
     context_data['object_list'] = Products.objects.filter(is_published=True)
     for object in context_data['object_list']:
         version_active = Version.objects.filter(product=object, version_status=True).last()

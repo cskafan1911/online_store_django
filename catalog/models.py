@@ -18,6 +18,10 @@ class Category(models.Model):
 
 
 class Products(models.Model):
+    """
+    Класс для модели Products.
+    """
+
     name = models.CharField(max_length=100, verbose_name='Продукт')
     description = models.TextField(**NULLABLE, verbose_name='Описание')
     image = models.ImageField(upload_to='product_image', **NULLABLE, verbose_name='Изображение')
@@ -32,6 +36,9 @@ class Products(models.Model):
                                 verbose_name='Создатель')
 
     def __str__(self):
+        """
+        Строковое представление модели Products.
+        """
         return f"{self.name} {self.category}"
 
     class Meta:

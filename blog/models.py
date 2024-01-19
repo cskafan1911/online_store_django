@@ -5,6 +5,10 @@ NULLABLE = {'blank': True, 'null': True}
 
 
 class Blog(models.Model):
+    """
+    Класс модели Blog.
+    """
+
     title = models.CharField(max_length=50, verbose_name='Заголовок')
     slug = models.CharField(max_length=100, unique=True, verbose_name='Slug', **NULLABLE)
     content = models.TextField(verbose_name='Содержимое')
@@ -14,6 +18,9 @@ class Blog(models.Model):
     is_published = models.BooleanField(default=True, verbose_name='Признак публикации')
 
     def __str__(self):
+        """
+        Строковое представление модели Blog.
+        """
         return self.title
 
     class Meta:
