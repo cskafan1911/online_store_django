@@ -6,7 +6,7 @@ from django.views.generic import ListView, CreateView, TemplateView, UpdateView,
 
 from catalog.forms import ProductsForm, ModeratorForm
 from catalog.models import Products, Category
-from catalog.services import get_cache_objects_list
+from catalog.services import get_cache_objects_list, get_product_active_version
 from version.forms import VersionForm
 from version.models import Version
 
@@ -19,14 +19,7 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context_data = super(IndexView, self).get_context_data(**kwargs)
-        context_data['object_list'] = Products.objects.filter(is_published=True)
-        for object in context_data['object_list']:
-            version_active = Version.objects.filter(product=object, version_status=True).last()
-            if version_active:
-                object.version_number = version_active.version_number
-                object.version_name = version_active.version_name
-            else:
-                object.version_number = None
+        context_data = get_product_active_version(context_data)
 
         return context_data
 

@@ -1,14 +1,15 @@
 from django.core.cache import cache
 
-from catalog.models import Category
-from config.settings import CACHE_ENABLED
+from catalog.models import Category, Products
+from django.conf import settings
+
+from version.models import Version
 
 
 def get_cache_objects_list(model_):
-
     key = 'objects_list'
     objects_list = cache.get(key)
-    if CACHE_ENABLED:
+    if settings.CACHE_ENABLED:
         if objects_list is None:
             objects_list = model_.objects.all()
             cache.set(key, objects_list)
@@ -16,3 +17,16 @@ def get_cache_objects_list(model_):
         objects_list = model_.objects.all()
 
     return objects_list
+
+
+def get_product_active_version(context_data):
+    context_data['object_list'] = Products.objects.filter(is_published=True)
+    for object in context_data['object_list']:
+        version_active = Version.objects.filter(product=object, version_status=True).last()
+        if version_active:
+            object.version_number = version_active.version_number
+            object.version_name = version_active.version_name
+        else:
+            object.version_number = None
+
+    return context_data
