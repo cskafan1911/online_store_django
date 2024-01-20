@@ -10,6 +10,10 @@ from order.models import Order
 
 
 class OrderCreateView(CreateView):
+    """
+    Класс для создания объекта модели Order.
+    """
+
     model = Order
     form_class = OrderForm
     extra_context = {
@@ -17,15 +21,24 @@ class OrderCreateView(CreateView):
     }
 
     def get_success_url(self, *kwargs):
+        """
+        Метод перенаправляет пользователя на страницу с продуктом после успешного создания заявки.
+        """
         return reverse('catalog:product_info', args=[self.kwargs.get('pk')])
 
     def get_context_data(self, **kwargs):
+        """
+        Метод получает информацию о продукте или выдает ошибку 404.
+        """
         context_data = super().get_context_data(**kwargs)
         context_data['product'] = get_object_or_404(Products, pk=self.kwargs.get('pk'))
 
         return context_data
 
     def form_valid(self, form):
+        """
+        Метод отправляет письмо с заявкой на электронную почту.
+        """
         obj = form.save()
         send_mail(
             subject=f'Для товара {obj.product.name} есть заявка',

@@ -21,6 +21,7 @@ class ProductsForm(StyleFormMixin, forms.ModelForm):
     """
     Класс для форм приложения Products.
     """
+
     forbidden_list = ['казино', 'криптовалюта', 'крипта', 'биржа', 'дешево', 'бесплатно', 'обман', 'полиция', 'радар']
 
     def __init__(self, *args, **kwargs):
