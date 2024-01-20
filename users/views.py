@@ -17,12 +17,20 @@ from users.models import User
 
 
 class RegisterView(CreateView):
+    """
+    Класс регистрации пользователя.
+    """
+
     model = User
     form_class = UserRegisterForm
     template_name = 'users/register.html'
     success_url = reverse_lazy('users:login')
 
     def form_valid(self, form):
+        """
+        Метод для проверки валидации почты пользователя.
+        Генерирует ссылку для валидации и отправляет на электронную почту пользователя.
+        """
         user = form.save(commit=False)
         user.is_active = False
         user.save()
@@ -40,9 +48,16 @@ class RegisterView(CreateView):
 
 
 class UserConfirmEmailView(View):
+    """
+    Класс активации пользователя, после проверки электронной почты.
+    """
 
     @staticmethod
     def get(request, uidb64, token):
+        """
+        Метод сравнивает сгенерированный код для проверки электронной почты и активирует пользователя
+        после успешной проверки.
+        """
         try:
             uid = urlsafe_base64_decode(uidb64)
             user = User.objects.get(pk=uid)

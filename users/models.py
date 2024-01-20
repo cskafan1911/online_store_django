@@ -5,6 +5,10 @@ from catalog.models import NULLABLE
 
 
 class User(AbstractUser):
+    """
+    Класс модели User.
+    """
+
     username = None
     email = models.EmailField(unique=True, verbose_name='почта')
 
